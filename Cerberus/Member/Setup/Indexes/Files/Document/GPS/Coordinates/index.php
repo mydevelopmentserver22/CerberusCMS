@@ -17,7 +17,8 @@
  +  ------
  + Index Application
  + ----------------------------------------------------------------------------------------------------------
- + - This File, Location	 : Root Directory => Member => Setup => index.php
+ + - This File, Location	 : Root Directory => Member => Setup => Indexes => Files => Document =>
+ +				 : GPS => Coordinates => index.php
  + - This File, Version		 : 0.7.2
  + - This File, Programming Code : Pure Pre-Hyper-Text-Post-Processor
  + - Programming Code Model	 : Procedural, Functional, Object Oriented :: Pre-Order Algebraic
@@ -28,7 +29,7 @@
  + - Compatibility		 : Zend Engine				   :: Version Numbers: 3, 4
  + - Official Release Date	 : Wednesday, January 31st of 2024
  + ----------------------------------------------------------------------------------------------------------
- + -------------------------------------------------------------------------------	 - Nyx -
+ + -------------------------------------------------------------------------------	- Nyx -
  + --[][]--[][][]--[][][]--[][][]---[][][]--[][][]--[]--[]------[][][]------------   []++++||=======>
  + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------
  + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    |'-._/\_.-'|
@@ -73,7 +74,7 @@
  ============================================================================================================
 */
 
-$_DIRECTORY_FILE_DENIAL					= "../../System/Default/Messages/Directory_Denial.php";
+$_DIRECTORY_FILE_DENIAL					= "../../../../../../../System/Default/Messages/Directory_Denial.php";
 
 /*
  ============================================================================================================
