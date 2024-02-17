@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /Applications/
+Disallow: /Architect/
+Disallow: /Download/
+Disallow: /Maintenance/
+Disallow: /Member/
+Disallow: /System/
+Disallow: /Temporary/
+Disallow: /Theme/
+Disallow: /Upload/
