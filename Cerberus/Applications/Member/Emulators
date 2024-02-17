@@ -1,0 +1,102 @@
+<?php
+/*
+ ============================================================================================================
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ + Cerberus Content Management System
+ + ----------------------------------------------------------------------------------------------------------
+ + - Author			 : Gary Christopher Johnson of Oildale and SouthGate In Southern California
+ + - Company			 : CerberusCMS, Free and Open Source Software
+ + - Company Address		 : Oildale In Southern California, United States of America
+ + - Electronic Mail Address	 : CerberusCMS2@Proton.me
+ + - Document Notes		 : View this file in a non-formatting text editor without word-wrap for the
+ +				 : correct display of this programming code and its indentation.
+ + ----------------------------------------------------------------------------------------------------------
+ +    ()  ()  ()
+ +  ()  ()  ()
+ +  ------------------------------
+ +  Application Module
+ + ----------------------------------------------------------------------------------------------------------
+ + - This File, Location	 : Root Directory => Applications => Member => Emulators
+ + - This File, Version		 : 0.7.2
+ + - This File, Programming Code : Pure Pre-Hyper-Text-Post-Processor
+ + - Programming Code Model	 : Procedural, Functional, Object Oriented :: Pre-Order Algebraic
+ + -				 :					   :: Pre-Order Logical
+ + - Compatibility		 : Extensible-Markup-Language		   :: Version Numbers: 1, 1.1
+ + - Compatibility		 : Hyper-Text-Markup-Language		   :: Version Numbers: 1, 2, 3, 4, 5
+ + - Compatibility		 : Pre-Hyper-Text-Post-Processor 	   :: Version Numbers: 5, 7, 8
+ + - Compatibility		 : Zend Engine				   :: Version Numbers: 3, 4
+ + - Official Release Date	 : Wednesday, January 31st of 2024
+ + ----------------------------------------------------------------------------------------------------------
+ + -------------------------------------------------------------------------------	 - Nyx -
+ + --[][]--[][][]--[][][]--[][][]---[][][]--[][][]--[]--[]------[][][]------------   []++++||=======>
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    |'-._/\_.-'|
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    |    []    |
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    |___-[]-___|
+ + -[]-----[][][]--[][][]--[][][]---[][][]--[][][]--[]--[]------[]----------------    |__((**))__|
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    \   -[]-   /
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]------------/-\-     \   []   /
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]---VERSION--|4|-	\  []  /
+ + --[][]--[][][]--[]--[]--[][][]---[][][]--[]--[]--[][][]--[][][]------------\-/-	 '.[].'
+ + -------------------------------------------------------------------------------
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Build Number: 0.8 - Final
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Edit Number : 4,325
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ ^ ] Application Module :: Member :: Emulators
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Application Module Header
+ ============================================================================================================
+*/
+
+											echo ($_Application_Module_Member_Message_Emulators_Header);
+
+$_Application_Module_Member_Emulators_POST_TYPE						= $_POST['AMM_Emulators_Search_Type'];
+$_Application_Module_Member_Emulators_POST_KEYWORD					= $_POST['AMM_Emulators_Search_Keyword'];
+
+echo ("
+											<FORM ACTION=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Emulators&amp;LaunchGameType&#61;$_Application_Module_Member_Emulators_POST_TYPE&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" METHOD=\"POST\">
+												Video Game Console<BR>
+												<SELECT NAME=\"AMM_Emulators_Search_Type\" MAXLENGTH=\"1\">
+													<OPTION VALUE=\"0\">Nintendo :: Nintendo Entertainment System</OPTION>
+													<OPTION VALUE=\"1\">Nintendo :: Nintendo Entertainment System :: Super</OPTION>
+													<OPTION VALUE=\"2\">Nintendo :: Nintendo Entertainment System :: 64</OPTION>
+													<OPTION VALUE=\"3\">Nintendo :: Nintendo Entertainment System :: GameCube</OPTION>
+													<OPTION VALUE=\"4\">Nintendo :: Nintendo Entertainment System :: Wii</OPTION>
+													<OPTION VALUE=\"5\">Sega :: Genesis</OPTION>
+													<OPTION VALUE=\"6\">Sega :: GameGear</OPTION>
+													<OPTION VALUE=\"7\">H.T.M.L. 5 :: Canvas</OPTION>
+													<OPTION VALUE=\"8\">H.T.M.L. 5 :: Unity 3D</OPTION>
+												</SELECT><BR>
+												Find Video Game<BR>
+													<INPUT TYPE=\"TEXT\" NAME=\"AMM_Emulators_Search_Keyword\" VALUE=\"Input Video Game Name Here...\" MAXLENGTH=\"20\"><BR>
+												<INPUT TYPE=\"SUBMIT\" VALUE=\"Search\">
+											</FORM><BR>
+");
+
+if ($_GET["LaunchGameType"] == "7") {
+
+echo ("<CENTER><OBJECT DATA=\"./Applications/Video_Games/HTML5/Canvas/$_Application_Module_Member_Emulators_POST_KEYWORD/index.html\" WIDTH=\"100%\" HEIGHT=\"450\"></OBJECT></CENTER>");
+
+}
+
+if ($_GET["LaunchGameType"] == "8") {
+
+echo ("<CENTER><OBJECT DATA=\"./Applications/Video_Games/HTML5/Unity3D/$_Application_Module_Member_Emulators_POST_KEYWORD/index.html\" WIDTH=\"100%\" HEIGHT=\"450\"></OBJECT></CENTER>");
+
+}
+?>

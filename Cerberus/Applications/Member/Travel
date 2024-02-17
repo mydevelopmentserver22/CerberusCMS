@@ -1,0 +1,830 @@
+<?php
+/*
+ ============================================================================================================
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ + Cerberus Content Management System
+ + ----------------------------------------------------------------------------------------------------------
+ + - Author			 : Gary Christopher Johnson of Oildale and SouthGate In Southern California
+ + - Company			 : CerberusCMS, Free and Open Source Software
+ + - Company Address		 : Oildale In Southern California, United States of America
+ + - Electronic Mail Address	 : CerberusCMS2@Proton.me
+ + - Document Notes		 : View this file in a non-formatting text editor without word-wrap for the
+ +				 : correct display of this programming code and its indentation.
+ + ----------------------------------------------------------------------------------------------------------
+ +    ()  ()  ()
+ +  ()  ()  ()
+ +  ------------------------------
+ +  Application Module
+ + ----------------------------------------------------------------------------------------------------------
+ + - This File, Location	 : Root Directory => Applications => Member => Travel
+ + - This File, Version		 : 0.7.2
+ + - This File, Programming Code : Pure Pre-Hyper-Text-Post-Processor
+ + - Programming Code Model	 : Procedural, Functional, Object Oriented :: Pre-Order Algebraic
+ + -				 :					   :: Pre-Order Logical
+ + - Compatibility		 : Extensible-Markup-Language		   :: Version Numbers: 1, 1.1
+ + - Compatibility		 : Hyper-Text-Markup-Language		   :: Version Numbers: 1, 2, 3, 4, 5
+ + - Compatibility		 : Pre-Hyper-Text-Post-Processor 	   :: Version Numbers: 5, 7, 8
+ + - Compatibility		 : Zend Engine				   :: Version Numbers: 3, 4
+ + - Official Release Date	 : Wednesday, January 31st of 2024
+ + ----------------------------------------------------------------------------------------------------------
+ + -------------------------------------------------------------------------------	 - Nyx -
+ + --[][]--[][][]--[][][]--[][][]---[][][]--[][][]--[]--[]------[][][]------------   []++++||=======>
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    |'-._/\_.-'|
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    |    []    |
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    |___-[]-___|
+ + -[]-----[][][]--[][][]--[][][]---[][][]--[][][]--[]--[]------[]----------------    |__((**))__|
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]----------------    \   -[]-   /
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]------------/-\-     \   []   /
+ + -[]-----[]------[]--[]--[]---[]--[]------[]--[]--[]--[]------[]---VERSION--|4|-	\  []  /
+ + --[][]--[][][]--[]--[]--[][][]---[][][]--[]--[]--[][][]--[][][]------------\-/-	 '.[].'
+ + -------------------------------------------------------------------------------
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Build Number: 0.8 - Final
+ + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Edit Number : 4,325
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ +
+ +
+ +
+ + [ ^ ] Application Module :: Member :: Travel
+ +
+ +
+ +
+ ============================================================================================================
+*/
+
+/*
+ ============================================================================================================
+ + Application Module Header
+ ============================================================================================================
+*/
+
+											echo ($_Application_Module_Member_Mesage_Travel_Header);
+											
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Options
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Display"] == "Options") {
+
+echo ("
+Backpacking :: Tutorial :: Expert
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;Tutorial&amp;Type&#61;Backpacking&amp;Level&#61;Expert\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Tutorial :: Expert ::\">Backpacking :: Tutorial :: Expert</A><BR><BR>
+
+Backpacking :: Gear :: All-In-One :: Male
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Gender&#61;Male&amp;Type&#61;General&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: General ::\">Backpacking :: Gear :: Lightweight :: General</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Gender&#61;Male&amp;Type&#61;Desert&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: General ::\">Backpacking :: Gear :: Lightweight :: Desert</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Gender&#61;Male&amp;Type&#61;Coastal&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: Coastal ::\">Backpacking :: Gear :: Lightweight :: Coastal</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Gender&#61;Male&amp;Type&#61;Mountain&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: Mountain ::\">Backpacking :: Gear :: Lightweight :: Mountain</A><BR><BR>
+
+Backpacking :: Gear :: All-In-One :: Femald
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Gender&#61;Female&amp;Type&#61;General&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: General ::\">Backpacking :: Gear :: Lightweight :: General</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Gender&#61;Female&amp;Type&#61;Desert&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: General ::\">Backpacking :: Gear :: Lightweight :: Desert</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Gender&#61;Female&amp;Type&#61;Coastal&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: Coastal ::\">Backpacking :: Gear :: Lightweight :: Coastal</A><BR>
+* <A HREF=\"?$_INTERNAL_APPLICATION_MODULE_MEMBER&#61;Travel&amp;Display&#61;BackpackingGear&amp;Gender&#61;Female&amp;Type&#61;Mountain&amp;$_GLOBAL_SYSTEM_SECURITY_CACHE_CIRCUMVENTION_HTR_RANDOM_STRING_GENERATION\" TITLE=\":: Open & Display :: The :: Internal Application :: Backpacking :: Gear :: Lightweight :: Mountain ::\">Backpacking :: Gear :: Lightweight :: Mountain</A><BR><BR>
+");
+
+} // [ + ] IF: Internal Application: Display :: Is: Options
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Tutorial
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Display"] == "Tutorial") {
+
+/*
+ ============================================================================================================
+ + [ @ ] IF: Internal Application: Display :: Tutorial :: Type :: Backpacking
+ ============================================================================================================
+*/
+
+if ($_GET["Type"] == "Backpacking") {
+
+/*
+ ============================================================================================================
+ + [ @ ] IF: Internal Application: Display :: Tutorial :: Type :: Backpacking :: Level :: Expert
+ ============================================================================================================
+*/
+
+if ($_GET["Level"] == "Expert") {
+
+echo ("
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\"></CENTER>
+<CENTER>Tutorial :: Backpacking :: Expert</CENTER>
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\">
+<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Backpacking_Document_Expert.txt\"></OBJECT></CENTER><BR><BR>
+
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\"></CENTER>
+<CENTER>Applications :: KDE Plasma Mobile</CENTER>
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\">
+<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Backpacking_Applications_AOSP.txt\"></OBJECT></CENTER><BR><BR>
+
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\"></CENTER>
+<CENTER>Applications :: Lineage Operating System</CENTER>
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\">
+<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Backpacking_Applications_AOSP.txt\"></OBJECT></CENTER><BR><BR>
+
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\"></CENTER>
+<CENTER>Applications :: Google &reg; &copy; Android Open Source Software Project / Android</CENTER>
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\">
+<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Backpacking_Applications_AOSP.txt\"></OBJECT></CENTER><BR><BR>
+
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\"></CENTER>
+<CENTER>Applications :: Apple &reg; &copy; iOS</CENTER>
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\">
+<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Backpacking_Applications_AOSP.txt\"></OBJECT></CENTER><BR><BR>
+
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\"></CENTER>
+<CENTER>Applications :: Nokia &reg; &copy; KaiOS</CENTER>
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\">
+<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Backpacking_Applications_AOSP.txt\"></OBJECT></CENTER><BR><BR>
+");
+
+} // [ + ] IF: Internal Application: Display :: Tutorial :: Type :: Backpacking :: Level :: Expert :: Is: Activated
+
+} // [ + ] IF: Internal Application: Display :: Tutorial :: Type :: Backpacking :: Is: Activated
+
+} // [ + ] IF: Internal Application: Display :: Tutorial :: Is: Activated
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Backpacking Gear
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Display"] == "BackpackingGear") {
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Backpacking Gear :: Gender :: Male
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Gender"] == "Male") {
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Backpacking Gear :: Type :: General
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Type"] == "General") {
+
+echo ("
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\"></CENTER>
+<CENTER>Backpacking :: Go Bag :: Gear :: Lightweight :: General</CENTER>
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\">
+<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Recommendations_Personal_Gear_Travel_Backpacking_General.txt\"></OBJECT></CENTER>
+
+<BR><BR>
+Gender :: Male :: HeadWear
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Gender :: Male :: EyeWear
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Gender :: Male :: EyeWear :: Smart Glasses
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/EyeWear/SmartGlasses/SmartGlasses_Ray-Ban_Wayfarer_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The slim and discrete smart glassses can be used to record live video that can then be instantly transmitted to this Web Application over Encrypted Mobile Cell Phone LTE Internet Connection or Satellite Radio Cell Phone Internet Connection.
+These smart glasses can also be used for long distance Voice Communications and Video Communcations over Encrypted Mobile Cell Phone LTE Internet Connection or Satellite Radio Cell Phone Internet Connection.
+The Ray-Ban &#8482; SmartGlasses have been demonstrated to compare to Internal Ear Bone Radio Communication Microphone Implant otherwise known as an Inner Ear Bone Radio Conduction Implant.
+
+<BR><BR>
+Gender :: Male :: EyeWear :: Sun Glasses
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/EyeWear/SunGlasses/SunGlasses_Lacoste_Aviator.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/EyeWear/SunGlasses/SunGlasses_Ray-Ban_Aviator_Chromance_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HeadWear/EyeWear/SunGlasses/SunGlasses_Vuarnet_007_Brown.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown Sun Glasses with polarized lenses make for a high quality viewing experience in different weather conditions.
+
+<BR><BR>
+Gender :: Male :: EarWear
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Gender :: Male :: EarWear :: Earrings
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+
+<BR><BR>
+Gender :: Male :: NeckWear
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Gender :: Male :: NeckWear :: Shemagh / Kefflyeh
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/NeckWear/Shemagh/Shemagh_VoodooTactical_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The Shemagh / Kefflyeh can be used for 100 and more different things. From blanket, pillow, face guard, waist bag to towel and beyond.
+
+<BR><BR>
+Gender :: Male :: NeckWear :: NeckGuard
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/NeckWear/NeckGuard/NeckGuard_GuardWell_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The authentic GuardWell &#8482; NeckGuard can be used for guarding the face and the neck in different weather conditions.
+
+<BR><BR>
+Gender :: Male :: NeckWear :: Scarf
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/NeckWear/Scarf/Scarf_BurBerry_Cashmere_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The BurBerry &#8482; Cashmere Scarf is a high quality scarf that can be used in different weather conditions.
+
+<BR><BR>
+Gender :: Male :: TorsoWear
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Gender :: Male :: TorsoWear :: Performance :: Shirt
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/TorsoWear/Shirt/Shirt_UnderArmor_Polyester_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The Performance UnderArmor &#8482; Polyester Shirt with quick dry material is guaranteed to keep the body warm and dry in different weather conditions.
+
+<BR><BR>
+Gender :: Male :: TorsoWear :: Performance :: Jacket
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/TorsoWear/Jacket/Jacket_UnderArmor_Polyester_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The Performance UnderArmor &#8482; Polyester Jacket with quick dry material is guaranteed to keep the body warm and dry in different weather conditions.
+
+<BR><BR>
+Gender :: Male :: TorsoWear :: Performance :: Rain Jacket
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/TorsoWear/Jacket/RainJacket_4Element_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/TorsoWear/Jacket/RainJacket_OzarkTrail_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The Performance Fourth Element &#8482; Polyester Rain Jacket with quick dry material is guaranteed to keep the body warm and dry in different weather conditions.
+
+<BR><BR>
+Gender :: Male :: Accessories :: Suspenders
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Suspenders/Suspenders_RothcoX_Nylon_Polyester_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The High Performance Suspenders with quick dry material is guaranteed to keep the pants high above the waist and keep the pants tight around the lower body.
+
+<BR><BR>
+Gender :: Male :: ArmWear
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Gender :: Male :: WristWear
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Gender :: Male :: WristWear :: Analog Watch
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/WristWear/Watch/AnalogWatch/AnalogWatch_Timex_Expedition_Titanium.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The Timex &#8482; Expedition Watch with stainless steel watch housing and a NATO-Style wrist band makes for a long lasting, water-proof watch that will always give the correct time in different time measuring formats.
+
+<BR><BR>
+Gender :: Male :: WristWear :: Smart Watch
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/WristWear/Watch/SmartWatch/SmartWatch_DMCooler_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/WristWear/Watch/SmartWatch/SmartWatch_Google_Pixel_2.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/WristWear/Watch/SmartWatch/SmartWatch_Lenovo_Pro.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/WristWear/Watch/SmartWatch/SmartWatch_Samsung_Galaxy_Watch_5.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown Smart Watches &#8482; make for an excellent electronics accessory that can almost always provide radio communications over Mobile Cell Phone Internet Connection. Radio communications such as voice and video communications can be established directly from the wrist.
+
+<BR><BR>
+Gender :: Male :: HandWear
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Gender :: Male :: HandWear :: Gloves
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Gender :: Male :: HandWear :: Gloves :: Performance
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/HandWear/Gloves/Gloves_UnderArmor_StormRun.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The UnderArmor &#8482; Storm Run gloves with modified fingertips on the gloves that make the gloves usable with a cell phone screen in the rain, in the high moisture air conditions and in different weather conditions.
+
+<BR><BR>
+Gender :: Male :: LegWear
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Gender :: Male :: LegWear :: Pants
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Gender :: Male :: LegWear :: Pants :: Performance
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/LegWear/Pants/Pants_Levi_505_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The Levi &#8482; High Performance 505 Pant Jeans can be modified with extra-tough kevlar and nylon threadding to guarantee high performance use.
+
+<BR><BR>
+Gender :: Male :: UnderWear
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Gender :: Male :: UnderWear :: Thermals
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/UnderWear/Thermal/Thermal_Shirt_UnderArmor_Polyester.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/UnderWear/Thermal/Thermal_Pant_UnderArmor_Polyester.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/UnderWear/Thermal/Thermal_Set_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The UnderArmor &#8482; Polyester Thermals can be modified with extra-tough kevlar, extra-tough nylon threadding and other materials to guarantee that the body will stay warm down to 20 degrees farenheit.
+
+<BR><BR>
+Gender :: Male :: FootWear
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Gender :: Male :: Boots
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/FootWear/Boots/Boots_DrMartens_Combes_Nylon_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The Dr. Marten &#8482; Nylon Combes Extra Tough with re-inforced stitching job of kevlar stitching in a criss-cross pattern and kevlar fabric sheets sewn into the fabric on the inside and the outside of the upper, kevlar / paracord 750
+boot laces with stainless steel metal tips, inserted premium memory-foam foot pads and applied Shoe-Goo to the bottom of the soles make for one of the most long lasting, durable and versatile hot and dry desert weather conditions boot. One can walk up to ~18 miles non-stop in a 24 hour period without
+any risk of corns, callus, fungal infection, bacterial infection. The applied Shoe-Goo to the bottom of the boot soles of the boots guarantee that the soles of the boots will never grind ground in up to ~18 miles of walking and running on different surfaces in 24 hours every day for up to 30 days without the need to apply new Shoe-Goo to the boot soles. With the shown modifications the boots can be made to last up to 365 days without the need to replace. With the specified chemical solutions the boots can be made water-proof and fire-proof in up to 1700 degrees farenheit for durations of up to ~10 minutes over an open flame, ~5 minutes over an open concentrated torch and up to ~60 minutes of walking throughs spread apart fires. Compared to most U.S. Military Issue boots for hot and dry desert weather conditions this boot is superior with the modifications.
+
+<BR><BR>
+Gender :: Male :: Sandals
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/FootWear/Sandals/Sandals_Olukai_Brown.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/FootWear/Sandals/Sandals_QuickSilver_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The Olukai &#8482; Sandals can be modified with stitch re-inforcements to last up to 6 months with 7 - 10 miles per day of walking in the sand without any risk of the foot getting any infections because the upper is a fabric material and not plastic. The shown QuickSilver Sandals are fabric upper and not plastic and with the correct modifications these specific sandals can be used to walk up to 7 - 10 miles per day and will last for up to 6 months.
+
+<BR><BR>
+Gender :: Male :: Boots :: Laces
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/FootWear/Laces/Laces_BootLaces_Kevlar_Paracord_MetalTips_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The Kevlar Twisted Boot Laces With Paracord 550 / 750 With Rust-Proof Stainless Steel Tips are guaranteed to last for up to several years of heavy use in different weather conditions and they can be used for many different things from spear fishing and strangling animals to hanging objects from trees in addition to securely fastening the boot around the ankle.
+
+<BR><BR>
+Gender :: Male :: Shoes :: Rubber Cement
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/FootWear/RubberCement/RubberCement_ShoeGoo.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The ShoeGoo &#8482; Rubber Cement can be applied to the sole of the boot to guarantee that the sole of the boot will never grind down in up to ~18 miles of walking per day for up to 30 days.
+
+<BR><BR>
+Gender :: Male :: Boots :: Inserts
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/FootWear/MemoryFoam/FootWear_MemoryFoam_AirPlus_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The AirPlus &#8482; Memory Foam Boot Inserts can be modified with extra-tough stitch reinforcements to last for up to 30 days.
+
+<BR><BR>
+Gender :: Male :: Socks
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/FootWear/Socks/Socks_USOA_AntiMicrobial.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The Boot Socks made of 80% cotton can be sprayed with special anti-microbial, anti-viral, anti-fungal, anti-parasite liquid spray to guarantee that the feet will never experience any viral, fungal,
+parasitic or microbial infection. The spray otherwise known as a cure all is known to absorb into the skin of the feet to keep the feet healthy and clean with long use of the boots.
+
+<BR><BR>
+Gender :: Male :: Wallet
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Gender :: Male :: Wallet :: Passport
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Wallet/Wallet_SwissGear_Passport.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The Swiss Gear &#8482; Passport Wallet can be modified with extra-tough stitching re-inforcements to guarantee long lasting Passport security while traveling.
+
+<BR><BR>
+Gender :: Male :: Wallet :: Discrete
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Wallet/Wallet_TrayVax_Metal.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The TrayVax &#8482; Metal wallet is guaranteed to keep secure all folded money and financial cards.
+
+<BR><BR>
+Gender :: Male :: Financial
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Gender :: Male :: Financial :: Cards
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Gender :: Male :: Financial :: Cards :: American Express
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Financial/Cards/Financial_Card_AmericanExpress_BlueBird.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Financial/Cards/Financial_Card_AmericanExpress_Serve.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The American Express backed &#8482; Cash-Pre-Paid card accounts and card can be used for travel. The cards are high security because the cards can be activated and deactivated from the Internet, all of the card transactions can be tracked
+and read by friends and family from the Internet or over the phone, the cards can be instantly deactivated and new cards can be sent out by next-day air delivery to any location, the accounts can be replenished with funds by the
+account owner or friends and family and finally large amounts of cash can be withdrawn anywhere in the world through RIA Money Transfer or where any cash location pickup is available.
+
+<BR><BR>
+Gender :: Male :: Financial :: Cards :: Visa
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Financial/Cards/Financial_Card_Visa_BlueBird.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Financial/Cards/Financial_Card_Visa_CashApp.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Financial/Cards/Financial_Card_Visa_Chime.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The Visa backed &#8482; Cash-Pre-Paid card accounts and card can be used for travel. The cards are high security because the cards can be activated and deactivated from the Internet, all of the card transactions can be tracked
+and read by friends and family from the Internet or over the phone, the cards can be instantly deactivated and new cards can be sent out by next-day air delivery to any location, the accounts can be replenished with funds by the
+account owner or friends and family and finally large amounts of cash can be withdrawn anywhere in the world through RIA Money Transfer or where any cash location pickup is available.
+
+<BR><BR>
+Gender :: Male :: Miscellanious
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Gender :: Male :: Miscellanious :: Valuable
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Gender :: Male :: Miscellanious :: Sterling Silver
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Miscellanious/Miscellanious_Sterling_Silver_Wire.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The Sterling Silver Wire can be purchased in spools and then wrapped around objects that a traveler travels with. The Sterling Silver Wire can then be sold to individuals or to businesses to get large amounts of
+cash in emergency situations.
+
+<BR><BR>
+Gender :: Male :: Weather Safety
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Gender :: Male :: Weather Safety :: Tent
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Gender :: Male :: Weather Safety :: Tent :: Light-Weight
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Tent/Tent_1Person_OzarkTrail_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown Light-Weight Tent has enough room for 1 person, the tent is waterproof and weatherproof. This tent can be easily carried in a slim and discrete tube for quick travel from campsite to campsite.
+
+<BR><BR>
+Gender :: Male :: Weather Safety :: Sleeping Bag
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Gender :: Male :: Weather Safety :: Sleeping Bag :: Lightweight
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Sleeping Bag/SleepingBag_0Degree_NorthFace_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown Light-Weight Sleepig Bag with modifications of stitching reinforcement and additional water-proof, moisture-proof and cold-proof material is usable down to 0 degrees Farenheit and will keep the body extra warm down to 0 degrees Farenheit. The additional material will make the shown sleeping bag water-proof in up to
+several inches of direct rain fall on the sleeping bag for up to 48 hours before the rain fall begins to soak into the material. The material has moisture wicking fabric and
+it will quickly dry in up to ~36 degrees farenheit if it is soaked in any water.
+
+<BR><BR>
+Gender :: Male :: Backpack
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Gender :: Male :: Backpack :: Military Issue
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Gender :: Male :: Backpack :: Military Issue :: Desert :: Molle 3-Day Backpack
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Molle/Backpack_Unbranded_MilitaryIssue_Molle_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown non-branded military issue backpack with backpack attachments is made of high quality nylon material and is guaranteed to last for up to 365 days of heavy usage in hot and dry desert weather conditions.
+This backpack with attachments can carry up to 40 pounds of weight with attached hand gun and ammunition. The shoulder straps are removable and the waist clip will guarantee that the backpack stays tight around the body.
+The zippers can be modified so that anyone that travels by in any circumstance will never be able to steal the backpack or remove the backpack from the person wearing it. The extra thick nylon material makes it very difficult
+for pickpockets to cut the backpack open with a razor blade to steal any items or objects out of the backpack.
+
+<BR><BR>
+Gender :: Male :: Backpack :: Military Issue :: All Weather :: Waterproof :: 3-Day Backpack
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Waterproof/Backpack_Unbranded_Waterproof.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown non-branded military issue backpack looks like a water-proof cooler backpack, but it is not. This backpack is compeletely water-proof and air-tight. This backpack can be completely submerged into water
+and all of the items within it will remain completely dry especially if the items are placed into water-proof plastic bags. This backpack is usable in any weather conditions and it will not melt in high heat
+desert weather conditions in up to 48 hours of direct sunlight on the backpack at up to ~115 degrees farenheit.
+
+<BR><BR>
+Gender :: Male :: Backpack :: Attachments :: Plastic ID Container
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Attachments/Backpack_Attachments_Plastic_ID_Container.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown plastic ID containers can be attached to the backpack and a personal ID or an address ID can be placed into the plastic ID container so that everyone will know who the backpack belongs to.
+
+<BR><BR>
+Gender :: Male :: Backpack :: Attachments :: Carabiner
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Attachments/Backpack_Attachments_NiteIze_Carabiner.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Attachments/Backpack_Attachments_NiteIze_CamJam.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Backpack/Attachments/Backpack_Attachments_BlackDiamond_Carabiner.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown Black Diamond &#8482; Carabiner can be used with Paracord 750 and rock climbing Paracord and rope. This specific carabiner can support up to 1,000 pounds of weight. The NiteIze &#8482; Carabiners and CamJams
+can be used to attach to the backpack and to other objects.
+
+<BR><BR>
+Gender :: Male :: Electronics
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Gender :: Male :: Electronics :: Laptop / NoteBook
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Gender :: Male :: Electronics :: Laptop / NoteBook :: Lenovo :: T-400s P / T500s P
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Electronics/Electronics_Laptop_Lenovo_T440P.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The Lenovo &#8482; T-400s model Laptop / NoteBook specifically the Lenovo &#8482; T-440P from the T400s models and the T-560P from the T-500s models can be used as an ultra durable, highly secure and extremely high performance laptop
+that is light weight. The motherboards in these specific laptop models with the NVidia GPU Chips can be upgraded to use an Intel Core i-7 and an Intel Core i-9 CPU Chip where then the the motherboard can be upgraded to
+use up to 64 GB of DDR3 RAM Memory or up to 128GB of DDR3 RAM Memory with a high capacity Terabyte Solid State Hard Drive. These specific laptops / notebooks can then be upgraded again to use aluminium housing and they
+considered one of the most secure, durable and high performance video gaming laptops on-the-go for the price range as of 2023 and 2024. One upgraded and once after all of the laptop parts are flashed with custom firmware these specific laptops can compete with high performance
+video gaming laptops released in 2023 and 2024. Some of the GPU Chip Firmwares can be flashed with custom firmwares and a Linux Operating System is best for video gaming for free.
+
+<BR><BR>
+Gender :: Male :: Electronics :: Laptop / NoteBook :: Google ChromeBook Aluminum
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Electronics/Electronics_Laptop_Google_ChromeBook_Aluminum.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown Google &#8482; ChromeBook is a highly durable, highly secure and light weight NoteBook that can be used with a Linux Operating System.
+<BR><BR>
+Gender :: Male :: Electronics :: Mobile Cell Phone / Mobile Smart Phone
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Gender :: Male :: Electronics :: Mobile Cell Phone :: Cell Tower :: Google Pixel
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Electronics/Electronics_Phone_SmartPhone_Google_Pixel_3XL.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The Google &#8482; Pixel model Mobile Cell Phones can be flashed with a Linux Operating System such as KDE Linux or a custom AOSP Operating System.
+
+<BR><BR>
+Gender :: Male :: Electronics :: Mobile Cell Phone :: Satellite :: Iridium
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Electronics/Electronics_Phone_Satellite_Iridium.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The Iridium &#8482; Mobile Satellite Phone can be used to make phone calls and communicate over Oribiting Satellite through Satellite Radio Wave. These mobile phones do not use cell tower radio frequencies,
+instead they use Satellite Radio Wave where it connects to an orbiting satellite in orbit around the Earth. This means that a traveler or backpacker can make and receive phone calls with these
+mobile phones where there are no cell towers.
+
+<BR><BR>
+Gender :: Male :: Electronics :: Mobile Cell Phone / Mobile Smart Phone :: Accessories :: Cases
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Electronics/Electronics_Phone_SmartPhone_Case_Metal_Grey.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown non-branded cell phone cases are extremely high quality and extremely durable with the right modifications. By sanding down this aluminium metal case and then by applying a coat of rust-proof and water-proof spray paint
+with 2 additional coats of high-heat and fire-proof spray paint mix it will make the case water-proof, moisture-proof, dust-proof, fire-proof. The case comes with a version of Gorilla Glass that can be additionally modified and
+upgraded by an experienced glass worker. One can then apply a privacy-screen onto the reverse-side of the Gorilla Glass and then use non-reversible screws with water-proof screw gaskets to make the cell phone: water-proof, dust-proof,
+fire-proof and moisture-proof. If using the cell phone with this specific modified metal case it should make it extremely difficult for anyone to get into the phone or steal / switch out the SIM card while traveling because
+the culprits will not have the tools at hand to disassemble the cell phone case to remove the parts or hack the cell phone physically. The cell phone can then be submerged into ~200 feet of water and will remain functional.
+ 
+<BR><BR>
+Gender :: Male :: Electronics :: Data Storage
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Gender :: Male :: Electronics :: Data Storage :: MicroSD :: SanDisk
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Electronics/Electronics_DataStorage_MicroSDXC_SanDisk.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+This specific SanDisk &#8482; MicroSDXC Data Storage Card can be flashed with custom firmware to store up to 128 GB of secure and encrypted data in a Linux Operating System flashed mobile cell phone.
+
+<BR><BR>
+Gender :: Male :: Electronics :: Data Storage :: MicroSD :: USB Data Storage Stick
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Electronics/Electronics_DataStorage_USB_SanDisk.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+This specific SanDisk &#8482; USB Data Storage Stick can be flashed with custom firmware to store up to 1 Terabyte of secure and encrypted data. The USB Data Storage Stick can be used several thousand
+times of writing and deleting data.
+
+<BR><BR>
+Gender :: Male :: Electronics :: Radio Protection
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+Gender :: Male :: Electronics :: Radio Protection :: Faraday
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Electronics/Electronics_FaraDay_NX3.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The NX3 &#8482; FaraDay Radio Protection sleves can be used to store electronics such as a laptop / notebook and mobile cell phone to cut off all radio communication to and from the electronic devices.
+
+<BR><BR>
+Gender :: Male :: Electronics :: HeadPhones / EarPhones / EarBuds
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Electronics/Electronics_HeadPhones_Apple_White.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Electronics/Electronics_HeadPhones_SkullCandy_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown Apple &#8482; EarBuds and SkullCandy &#8482; EarBuds give a high quality audio experience on-the-go. These specific SkullCandy &#8482; EarBuds can be wrapped in additional braided cable and the
+EarBud pieces can be disassembled and modified with additional high quality solder to make them last for up to 6 months of continous use. Without modifications the EarBuds will last up to 30 days if not tampered with.
+
+<BR><BR>
+Gender :: Male :: Electronics :: Power
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Gender :: Male :: Electronics :: Power :: Power Adapters
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Gender :: Male :: Electronics :: Power :: Power Adapters :: Universal
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Electronics/Electronics_PowerAdapter_BlackWeb_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+
+<BR><BR>
+Gender :: Male :: Electronics :: Power :: Power Packs
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Gender :: Male :: Electronics :: Power :: Power Packs :: High Performance
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Electronics/Electronics_PowerBank_Anker.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Electronics/Electronics_PowerBank_Lenovo.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Electronics/Electronics_PowerBank_Samsung.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown Anker &#8482;, Lenovo &#8482; and Samsung &#8482; Power Packs are high capacity power packs of 20,000 Miliampere Hours @ 3.4 Volts output. They are light weight and they can be used to re-charge
+a mobile cell phone of ~6,000 to ~8,000 Miliampere Hours capacity batteries several times while traveling or while backpacking where there are no power outlets. 20,000 Miliampere Hours capacity will re-charge
+a mobile cell phone of ~6,000 Miliampere Hours 3 times. Most mobile cell phones have low quality ~2,500 to ~5,000 Miliampere Hours batteries. Refer to the list of High Quality and High Performance Mobile Cell Phones
+in this guide to get an idea of what Mobile Cell Phones can be flashed with custom firmware and will stay powered the longest while traveling and while backpacking.
+
+<BR><BR>
+Gender :: Male :: Electronics :: Accessories
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Gender :: Male :: Electronics :: Accessories :: Portable Keyboards
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Gender :: Male :: Electronics :: Accessories :: Laser Projection
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Electronics/Keyboard_LaserProjection_AGS.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The AGS &#8482; Laser Keyboard Module is a compact metal module that can be easily stored and removed from the backpacking backpack. It can be used with a Mobile Cell Phone and a Laptop / NoteBook. The module projects
+a keyboard onto any surface where one can then type very quickly.
+
+<BR><BR>
+Gender :: Male :: Electronics :: Accessories :: Video Gaming
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Gender :: Male :: Electronics :: Accessories :: Video Gaming :: Video Game Controller
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Electronics/VideoGame_Controller_AOSP.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown portable wireless video gaming controller provides a high quality video gaming experience where the controller can mounth a mobile cell phone to play video games on the mobile cell phone or it can be 
+wirelessly tethered to a laptop / notebook to be used as a video game controller to play PC video games and emulated video games such as Nintendo Wii, Nintendo Switch and other emulated video game consoles.
+
+<BR><BR>
+Gender :: Male :: Accessories
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Gender :: Male :: Accessories :: Containers
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Cup/Cup_Flask_Stanely_Black.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Cup/Cup_Thermus_Thermos_Grey.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown Stanley &#8482; Flask and Thermos &#8482; Thermus are light weight liquid containers that can contain wiskey and rum liquor and other drinks while traveling and while backpacking.
+
+<BR><BR>
+Gender :: Male :: Accessories :: Survival :: Fire
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Gender :: Male :: Accessories :: Survival :: Lighter :: Kerosene
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Gender :: Male :: Accessories :: Survival :: Lighter :: Kerosene :: Zippo
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Lighter/Lighter_Kerosene_Zippo.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown Zippo &#8482; Kerosene Lighter can be modified to project an open flame of several inches and additional Kerosene Cotton can be placed within the lighter to store more Korosene Fluid.
+
+<BR><BR>
+Gender :: Male :: Accessories :: Survival :: Lighter :: Zippo :: Accessories
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Lighter/Lighter_Kerosene_Zippo_Flint.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Lighter/Lighter_Kerosene_Zippo_Fluid.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Lighter/Lighter_Kerosene_Zippo_Wick.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown Zippo &#8482; Kerosene Lighter Accessories provide long lasting fire capability for long durations of travel and backpacking.
+
+<BR><BR>
+Gender :: Male :: Accessories :: Survival :: Lighter :: Butane
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Gender :: Male :: Accessories :: Survival :: Lighter :: Butane :: Koltec
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Lighter/Lighter_Butane_Torch_Koltec.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+This specific Koltec &#8482; Butane Torch can be modified to project a 1 foot long high heat torch flame. It can be used to start camp fires as well as torch and cook food and other materials. This specific torch lighter
+can melt through glass, metal and other materials very quickly. This specific torch lighter is comparable to a fictitious Lightsaber from the Star Wars &reg; &trade; Films because this butane torch lighter can be disassembled
+and then modified where then the parts can be placed within the non-branded aluminium flagh light to create a real Torch Lightsaber capable of several thousand degrees of heat in farenheit measurements.
+
+<BR><BR>
+Gender :: Male :: Accessories :: Survival :: FireStarter
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Survival/Accessories_Survival_FireStarter.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown non-branded Fire Starter Stick can be used with a knife to start a fire by scraping this Fire Starter Stick underneath flammable ember material collected near a campsite.
+
+<BR><BR>
+Gender :: Male :: Accessories :: Multi-Card Tool
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Survival/Accessories_Survival_VoodooTactical_MultiCard_Tool.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown metal Multi-Card Tool can be used for hundreds if not more purposes while traveling and backpacking. It can be used as a screw driver, cutting tool, bottle opener and many different things.
+
+<BR><BR>
+Gender :: Male :: Accessories :: Flash Light
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Flashlight/Flashlight_Unbranded_Aluminum_T6_LightSaber.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>&nbsp;
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Flashlight/Flashlight_GearLight_UVLight.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown non-branded Flash Light contains a T-6 or a T-8 L.E.D. bulb that can be concentrated onto a view area and is almost as bright as a car spot light. The battery can be upgraded to a high quality high capacity 21700 cylinderical
+battery of 10,000 Miliampere Hours for extremely bright and long lasting light while traveling and while backpacking.
+
+<BR><BR>
+Gender :: Male :: Accessories :: Writing :: Pen
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Accessories/Writing/Writing_Zebra_Pen_StainlessSteel.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The Zebra &#8482; Stainless Steel Pens and Pencils provide high quality writing that remains rust-proof, fire-proof, water-proof and moisture-proof while traveling and while backpacking.
+
+<BR><BR>
+Gender :: Male :: Knife
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Gender :: Male :: Knife :: Desert :: Glass
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Knives/Knife_Uzi_Desert_Glass.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown Uzi &#8482; Desert Weather Condition Folding Pocket Knife is an excellent tool while traveling and while backpacking. The glass handle is heat-proof and it can be left out in the direct sun at up to
+117 degrees farenheight for an unlimited amount of time without damage to the knife.
+
+<BR><BR>
+Gender :: Male :: Knife :: All Weather :: Survival
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Knives/Knife_ColdSteel_Survival.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown Cold Steel &#8482; Survival Knife remains one of the best long lasting survival knives available. The hilt has a lanyard hole where a lanyard cord can be attached.
+
+<BR><BR>
+Gender :: Male :: Knife :: All Weather :: Fixed Blade Lanyard
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Knives/Knife_Fixed_Blade_Lanyard.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG>
+High Quality Rust-Proof Fixed Blade Knives With Blood-Drain, Hand-Guard and Kevlar / Paracord 750 Lanyard Make For The Most Dangerous Knife In The World. Why ? Because once
+the lanyard is securely fastened around the wrist the knife cannot be removed from the wrist or from the hand and when anyone attempts to take the knife away they are instantly cut by the knife when they try to take it because
+they cannot take it away from the hand or the wrist. Knife fighting with a lanyard is the best way to go because it cannot be removed from the hand or from the wrist therefore the only thing the knife weilder
+can do is keep up with stabbing or cutting motions until the target is dead. One can kill bears, wild animals, enemy targets or any of those with an automatic rifle or a hand gun close range. Demonstrations have proven that an enemy with a hand gun or an automatic rifle
+cannot aim and shoot fast enough close range against someone with a lanyard fixed blade knife and the experienced knife weilder can stab an enemy or animal up to 200 times in ~60 seconds. Some demonstrations and real-world scenarios have proven that a fixed blade lanyard knife weilder
+can stab an enemy target that has a hand gun or an automatic rifle up to 200 times in the neck, head, chest, arms, hands and stomach in ~60 seconds. Fixed Blade Knives do not bend or break and if the Fixed Blade Lanyard has a Hand-Guard you can be sure that your hand will never slip onto the blade while using the knife. If the Fixed Blade Lanyard has a Blood-Drain the knife is guaranteed to not get stuck in the body of the enemy or the animal. Usually
+a thin or thick blade will get stuck in the body of the target because the body is a vacuum and foreign objects will get stuck in it if penetrated, especially a knife if it does not have a Blood-Drain. Handling wild animals close range with a Fixed Blade Lanyard Knife is not difficult once practiced and different parts of the animals body can be removed quickly afterwards. One can also cut away and strip away all of the meat and muscle off of the animal very quickly once the animal is dead. If the blade is thick enough one can be guaranteed to cut through hardened bone with ease. Contrary to popular belief: Fixed Blade Lanyard Knives are more dangerous than a kitchen knife or a meat cleaver.
+
+<BR><BR>
+Gender :: Male :: Miscellanious
+<HR ALIGN=\"LEFT\" WIDTH=\"30%\">
+
+<BR><BR>
+Gender :: Male :: Blanket
+<HR ALIGN=\"LEFT\" WIDTH=\"20%\">
+
+<BR><BR>
+Gender :: Male :: Blanket :: Mexican Blankets
+<HR ALIGN=\"LEFT\" WIDTH=\"10%\">
+<IMG SRC=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Image/Travel/Gear/Backpacking/Blanket/Blanket_Mexican_Blue.png\" WIDTH=\"125\" HEIGHT=\"125\" CLASS=\"AMMTravel\"></IMG><BR>
+The shown Mexican Blanket can be used as a poncho as well as a blanket. It is hand made in Mexico. The fabric material is guaranteed for long lasting use and will keep the body very warm in different weather conditions.
+");
+
+} // [ + ] IF: Internal Application: Display :: Backpacking Gear :: Type :: General
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Backpacking Gear :: Type :: Desert
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Type"] == "Desert") {
+
+echo ("
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\"></CENTER>
+<CENTER>Backpacking :: Go Bag :: Gear :: Lightweight :: General</CENTER>
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\">
+<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Recommendations_Personal_Gear_Travel_Backpacking_Desert.txt\"></OBJECT></CENTER>
+");
+
+} // [ + ] IF: Internal Application: Display :: Backpacking Gear :: Type :: Desert
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Backpacking Gear :: Type :: Coastal
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Type"] == "Coastal") {
+
+echo ("
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\"></CENTER>
+<CENTER>Backpacking :: Go Bag :: Gear :: Lightweight :: Coastal</CENTER>
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\">
+<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Recommendations_Personal_Gear_Travel_Backpacking_Coastal.txt\"></OBJECT></CENTER>
+");
+
+} // [ + ] IF: Internal Application: Display :: Backpacking Gear :: Type :: Coast
+
+/*
+ ============================================================================================================
+ +
+ + [ @ ] IF: Internal Application: Display :: Backpacking Gear :: Type :: Mountain
+ +
+ ============================================================================================================
+*/
+
+if ($_GET["Type"] == "Mountain") {
+
+echo ("
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\"></CENTER>
+<CENTER>Backpacking :: Go Bag :: Gear :: Lightweight :: Mountain</CENTER>
+<HR ALIGN=\"CENTER\" WIDTH=\"30%\">
+<CENTER><OBJECT HEIGHT=\"300\" WIDTH=\"80%\" DATA=\"./Theme/$_GLOBAL_SYSTEM_THEME_DIRECTORY/Text/Recommendations_Personal_Gear_Travel_Backpacking_Mountain.txt\"></OBJECT></CENTER>
+");
+
+} // [ + ] IF: Internal Application: Display :: Backpacking Gear :: Type :: Mountain
+
+} // [ + ] IF: Internal Application: Display :: Backpacking Gear :: Gender :: Male
+
+} // [ + ] IF: Internal Application: Display :: Backpacking Gear
+?>
